@@ -1,0 +1,40 @@
+html {
+    background-color: rgba(49, 49, 49, 0.85);
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 60px;
+    height: 100%;
+    width: 788px;
+    overflow: hidden;
+    margin: 8px 6px;
+}
+
+:not(input):not(textarea),
+:not(input):not(textarea)::after,
+:not(input):not(textarea)::before {
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+input, button, textarea, :focus {
+    outline: none;
+}
+
+#searchIcon {
+   margin-right: 14px;
+   color: #999999;
+}
+
+#searchBox {
+    flex-grow: 1;
+    font-size: 53px;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
